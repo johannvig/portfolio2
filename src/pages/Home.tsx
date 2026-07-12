@@ -276,7 +276,11 @@ export default function Home({ onNavigate }: HomeProps) {
 
       {/* Full project modal */}
       {openProject && (
-        <ProjectModal project={openProject} onClose={() => setOpenProject(null)} />
+        <ProjectModal
+          project={openProject}
+          onClose={() => setOpenProject(null)}
+          onCaseStudy={openProject.caseStudyPage ? () => onNavigate(openProject.caseStudyPage!) : undefined}
+        />
       )}
     </>
   );

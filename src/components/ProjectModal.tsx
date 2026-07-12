@@ -5,9 +5,10 @@ import { type Project } from '../data/projects';
 type Props = {
   project: Project;
   onClose: () => void;
+  onCaseStudy?: () => void;
 };
 
-export default function ProjectModal({ project, onClose }: Props) {
+export default function ProjectModal({ project, onClose, onCaseStudy }: Props) {
   const [galleryIdx, setGalleryIdx] = useState(0);
   const accent = project.colors.darkshapecol;
   const titleCol = project.colors.darktitlecol;
@@ -161,17 +162,29 @@ export default function ProjectModal({ project, onClose }: Props) {
             </div>
           )}
 
-          {/* GitHub link */}
-          <a
-            href={project.link}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="group inline-flex items-center gap-2 border border-white/15 text-white/70 px-6 py-3 rounded-full font-display font-medium text-sm tracking-wide hover:border-white/40 hover:text-white transition-all duration-300"
-          >
-            <Github size={15} />
-            Voir sur GitHub
-            <ArrowUpRight size={15} className="group-hover:rotate-45 transition-transform duration-300" />
-          </a>
+          <div className="flex flex-wrap gap-3">
+            <a
+              href={project.link}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="group inline-flex items-center gap-2 border border-white/15 text-white/70 px-6 py-3 rounded-full font-display font-medium text-sm tracking-wide hover:border-white/40 hover:text-white transition-all duration-300"
+            >
+              <Github size={15} />
+              Voir sur GitHub
+              <ArrowUpRight size={15} className="group-hover:rotate-45 transition-transform duration-300" />
+            </a>
+
+            {onCaseStudy && (
+              <button
+                type="button"
+                onClick={onCaseStudy}
+                className="group inline-flex items-center gap-2 border border-cyan-400/25 bg-cyan-400/10 text-cyan-100 px-6 py-3 rounded-full font-display font-medium text-sm tracking-wide hover:border-cyan-300/50 hover:bg-cyan-400/15 hover:text-white transition-all duration-300"
+              >
+                Case study
+                <ArrowUpRight size={15} className="group-hover:rotate-45 transition-transform duration-300" />
+              </button>
+            )}
+          </div>
         </div>
       </div>
     </div>

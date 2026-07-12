@@ -12,6 +12,7 @@ export type Project = {
   description: string;
   presentation: string;
   link: string;
+  caseStudyPage?: string;
   gallery: ProjectGalleryItem[];
   colors: {
     darktitlecol: string;
@@ -23,15 +24,16 @@ export type Project = {
 
 export const projects: Project[] = [
   {
-    name: 'Bioclipse',
-    urlName: 'bioclipse',
-    year: '2023',
-    type: 'Développement FullStack / Design UX-UI',
-    technologies: 'PHP / MySQL / Figma / Chatbot OpenAI',
+    name: 'Power Monitor',
+    urlName: 'pm',
+    year: '2026',
+    type: 'FullStack / Design UX-UI',
+    technologies: 'React / Vite / Python / MySQL / Figma',
     description:
-      "Ce projet mené sur l'ensemble du semestre S3 avec pour objectif de concevoir et développer une application web pour les producteurs alimentaires afin de distribuer leurs produits selon des standards professionnels. Les objectifs de ce projet sont de créer une application au sein d'une équipe en utilisant une approche de développement, collecter ainsi que formaliser les besoins à partir d'une description initialement vague ou incomplète et de développer une application qui manipule des données et respecte les paradigmes de qualité.",
+      "This application communicates with Meross connected outlets to capture, store and analyze live the consumption of different machines. Our approach began with the collection of user needs, followed by the design of models submitted to an initial feedback phase. After the development of this solution, we conducted targeted user tests in order to continuously assess and optimize the application’s ergonomics and usability.",
     presentation: '/images/project/bioclipse.png',
-    link: 'https://github.com/johannvig/Bioclipse',
+    link: 'https://github.com/johannvig/Mesures-FabLab',
+    caseStudyPage: 'case-study-pm',
     gallery: [
       { src: '/images/bioclipse/bioclipse1.png', comment: "Page d'accueil" },
       { src: '/images/bioclipse/bioclipse2.png', comment: 'Produits commercialisés par un producteur' },
@@ -51,6 +53,62 @@ export const projects: Project[] = [
       lighttitlecol: '#3ddd70',
       darkshapecol: '#3ddd70',
       lightshapecol: '#ded3c7',
+    },
+  },
+  {
+    name: 'My schedule',
+    urlName: 'schedule',
+    year: '2026',
+    type: 'Front-end / Design UX-UI',
+    technologies: 'PHP / MySQL / Figma / Chatbot OpenAI',
+    description:
+      "This project aimed to rethink the ergonomics and visual identity of the university agenda through a user-centered approach. Conducted in Agile mode, it began with a user research and needs prioritization phase (Sprint 1), followed by the design of the information architecture and the development of a functional prototype (Sprint 2). Regular Sprint Reviews with the sponsor finally made it possible to continuously adjust the interface until the final defense.",
+    presentation: '/images/project/bioclipse.png',
+    link: 'https://github.com/johannvig/MonAgenda',
+    caseStudyPage: 'case-study-schedule',
+    gallery: [
+      { src: '/images/bioclipse/bioclipse1.png', comment: "Page d'accueil" },
+      { src: '/images/bioclipse/bioclipse2.png', comment: 'Produits commercialisés par un producteur' },
+      { src: '/images/bioclipse/bioclipse3.png', comment: 'Localisation des producteurs' },
+      { src: '/images/bioclipse/bioclipse4.png', comment: 'Page de connexion' },
+      { src: '/images/bioclipse/bioclipse5.png', comment: 'Page de création de compte' },
+      { src: '/images/bioclipse/bioclipse6.png', comment: "Page des paramètres d'un compte" },
+      { src: '/images/bioclipse/bioclipse7.png', comment: 'Page de la messagerie' },
+      { src: '/images/bioclipse/bioclipse9.png', comment: "Page d'un produit" },
+      { src: '/images/bioclipse/bioclipse10.png', comment: 'Page de la liste des favoris' },
+      { src: '/images/bioclipse/bioclipse11.png', comment: 'Page du panier' },
+      { src: '/images/bioclipse/bioclipse12.png', comment: "Page de l'historique des commandes" },
+      { src: '/images/bioclipse/bioclipse13.png', comment: 'Page des inventaires' },
+    ],
+    colors: {
+      darktitlecol: '#ded3c7',
+      lighttitlecol: '#3ddd70',
+      darkshapecol: '#3ddd70',
+      lightshapecol: '#ded3c7',
+    },
+  },
+  {
+    name: 'PictoComm',
+    urlName: 'pictocomm',
+    year: '2023',
+    type: 'Software development / Design UX-UI',
+    technologies: 'JavaFX / Figma',
+    description:
+      "PictoComm est une application conçue pour permettre aux personnes autistes de s'exprimer plus facilement à travers des pictogrammes. Utilisant JavaFX, cette application propose une interface intuitive permettant aux utilisateurs de sélectionner et de communiquer via des images symboliques.",
+    presentation: '/images/project/pictocomm.png',
+    link: 'https://github.com/johannvig/PictoComm',
+    gallery: [
+      { src: '/images/pictocomm/pictocomm1.png', comment: 'Choisir un pictogramme' },
+      { src: '/images/pictocomm/pictocomm2.png', comment: 'Créer un séquentiel à partir de pictogramme' },
+      { src: '/images/pictocomm/pictocomm3.png', comment: 'Personnaliser un pictogramme 1' },
+      { src: '/images/pictocomm/pictocomm4.png', comment: 'Personnaliser un pictogramme 2' },
+      { src: '/images/pictocomm/pictocomm5.png', comment: 'Page de favoris' },
+    ],
+    colors: {
+      darktitlecol: '#f9bd0a',
+      lighttitlecol: '#0264bc',
+      darkshapecol: '#0264bc',
+      lightshapecol: '#ffb40340',
     },
   },
   {
@@ -127,18 +185,28 @@ export const projects: Project[] = [
     },
   },
   {
-    name: 'ColorSense',
-    urlName: 'colorsense',
-    year: '2024',
-    type: 'Développement mobile',
-    technologies: 'Android Studio',
+    name: 'Bioclipse',
+    urlName: 'bioclipse',
+    year: '2023',
+    type: 'Développement FullStack / Design UX-UI',
+    technologies: 'PHP / MySQL / Figma / Chatbot OpenAI',
     description:
-      "L'application Color Detector aide les personnes malvoyantes et aveugles à identifier les couleurs des objets, comme les vêtements, en utilisant la caméra de leur smartphone. Cette application vise à offrir une alternative plus abordable aux dispositifs commerciaux de détection des couleurs.",
-    presentation: '/images/project/colorsense.png',
-    link: 'https://github.com/johannvig/ColorSense',
+      "Ce projet mené sur l'ensemble du semestre S3 avec pour objectif de concevoir et développer une application web pour les producteurs alimentaires afin de distribuer leurs produits selon des standards professionnels. Les objectifs de ce projet sont de créer une application au sein d'une équipe en utilisant une approche de développement, collecter ainsi que formaliser les besoins à partir d'une description initialement vague ou incomplète et de développer une application qui manipule des données et respecte les paradigmes de qualité.",
+    presentation: '/images/project/bioclipse.png',
+    link: 'https://github.com/johannvig/Bioclipse',
     gallery: [
-      { src: '/images/colorsense/colorsense.png', comment: 'Detecteur de couleurs' },
-      { src: '/images/colorsense.png', comment: '' },
+      { src: '/images/bioclipse/bioclipse1.png', comment: "Page d'accueil" },
+      { src: '/images/bioclipse/bioclipse2.png', comment: 'Produits commercialisés par un producteur' },
+      { src: '/images/bioclipse/bioclipse3.png', comment: 'Localisation des producteurs' },
+      { src: '/images/bioclipse/bioclipse4.png', comment: 'Page de connexion' },
+      { src: '/images/bioclipse/bioclipse5.png', comment: 'Page de création de compte' },
+      { src: '/images/bioclipse/bioclipse6.png', comment: "Page des paramètres d'un compte" },
+      { src: '/images/bioclipse/bioclipse7.png', comment: 'Page de la messagerie' },
+      { src: '/images/bioclipse/bioclipse9.png', comment: "Page d'un produit" },
+      { src: '/images/bioclipse/bioclipse10.png', comment: 'Page de la liste des favoris' },
+      { src: '/images/bioclipse/bioclipse11.png', comment: 'Page du panier' },
+      { src: '/images/bioclipse/bioclipse12.png', comment: "Page de l'historique des commandes" },
+      { src: '/images/bioclipse/bioclipse13.png', comment: 'Page des inventaires' },
     ],
     colors: {
       darktitlecol: '#ded3c7',
@@ -176,28 +244,5 @@ export const projects: Project[] = [
       lightshapecol: '#2fd8ff5c',
     },
   },
-  {
-    name: 'PictoComm',
-    urlName: 'pictocomm',
-    year: '2023',
-    type: 'Développement logiciel / Design UX-UI',
-    technologies: 'JavaFX / Figma',
-    description:
-      "PictoComm est une application conçue pour permettre aux personnes autistes de s'exprimer plus facilement à travers des pictogrammes. Utilisant JavaFX, cette application propose une interface intuitive permettant aux utilisateurs de sélectionner et de communiquer via des images symboliques.",
-    presentation: '/images/project/pictocomm.png',
-    link: 'https://github.com/johannvig/PictoComm',
-    gallery: [
-      { src: '/images/pictocomm/pictocomm1.png', comment: 'Choisir un pictogramme' },
-      { src: '/images/pictocomm/pictocomm2.png', comment: 'Créer un séquentiel à partir de pictogramme' },
-      { src: '/images/pictocomm/pictocomm3.png', comment: 'Personnaliser un pictogramme 1' },
-      { src: '/images/pictocomm/pictocomm4.png', comment: 'Personnaliser un pictogramme 2' },
-      { src: '/images/pictocomm/pictocomm5.png', comment: 'Page de favoris' },
-    ],
-    colors: {
-      darktitlecol: '#f9bd0a',
-      lighttitlecol: '#0264bc',
-      darkshapecol: '#0264bc',
-      lightshapecol: '#ffb40340',
-    },
-  },
+  
 ];
