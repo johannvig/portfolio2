@@ -115,7 +115,7 @@ export default function Home({ onNavigate }: HomeProps) {
           <div className={`opacity-0-init ${loaded ? 'animate-fade-up delay-200' : ''} mb-8 pointer-events-auto`}>
             <span className="inline-flex items-center gap-2 border border-white/10 rounded-full px-4 py-1.5 text-xs font-medium text-white/50 tracking-widest uppercase backdrop-blur-sm bg-white/5">
               <span className="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse" />
-              Looking for a 3 to 4-month internship this summer
+              Looking for a 2 to 3-month internship this summer
             </span>
           </div>
 

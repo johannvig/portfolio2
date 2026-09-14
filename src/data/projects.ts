@@ -27,8 +27,8 @@ export const projects: Project[] = [
     name: 'My schedule',
     urlName: 'schedule',
     year: '2026',
-    type: 'Front-end / Design UX-UI',
-    technologies: 'PHP / MySQL / Figma / Chatbot OpenAI',
+    type: 'UI/UX Design',
+    technologies: 'Figma',
     description:
       "This project aimed to rethink the ergonomics and visual identity of the university agenda through a user-centered approach. Conducted in Agile mode, it began with a user research and needs prioritization phase (Sprint 1), followed by the design of the information architecture and the development of a functional prototype (Sprint 2). Regular Sprint Reviews with the sponsor finally made it possible to continuously adjust the interface until the final defense.",
     presentation: '/images/project/bioclipse.png',
@@ -59,7 +59,7 @@ export const projects: Project[] = [
     name: 'Power Monitor',
     urlName: 'pm',
     year: '2026',
-    type: 'FullStack / Design UX-UI',
+    type: 'Software development',
     technologies: 'React / Vite / Python / MySQL / Figma',
     description:
       "This application communicates with Meross connected outlets to capture, store and analyze live the consumption of different machines. Our approach began with the collection of user needs, followed by the design of models submitted to an initial feedback phase. After the development of this solution, we conducted targeted user tests in order to continuously assess and optimize the application’s ergonomics and usability.",
@@ -90,10 +90,10 @@ export const projects: Project[] = [
     name: 'PictoComm',
     urlName: 'pictocomm',
     year: '2023',
-    type: 'Software development / Design UX-UI',
+    type: 'Software development / UI/UX Design',
     technologies: 'JavaFX / Figma',
     description:
-      "PictoComm est une application conçue pour permettre aux personnes autistes de s'exprimer plus facilement à travers des pictogrammes. Utilisant JavaFX, cette application propose une interface intuitive permettant aux utilisateurs de sélectionner et de communiquer via des images symboliques.",
+      "PictoComm is an app designed to make it easier for people with autism to express themselves through pictograms. Using JavaFX, this application offers an intuitive interface allowing users to select and communicate via symbolic images.",
     presentation: '/images/project/pictocomm.png',
     link: 'https://github.com/johannvig/PictoComm',
     gallery: [
@@ -114,10 +114,10 @@ export const projects: Project[] = [
     name: "Parklec'h",
     urlName: 'parklech',
     year: '2024',
-    type: 'Développement FullStack / Design UX-UI',
+    type: 'Software development',
     technologies: 'Angular IONIC / MangoDB / API Google Map & data.gouv / Figma',
     description:
-      "Ce site web permet de connaitre la disponibilité des places de parkings à divers endroits à travers la France ainsi que de connaitre le parking le plus proche ayant des places disponibles.",
+      "This website allows you to know the availability of parking spaces in various locations across France as well as to know the nearest car park with available spaces.",
     presentation: '/images/project/parklech.png',
     link: 'https://github.com/johannvig/Parklec-h',
     gallery: [
@@ -139,10 +139,10 @@ export const projects: Project[] = [
     name: 'BookScape',
     urlName: 'bookscape',
     year: '2024',
-    type: 'Développement FullStack',
+    type: 'Software development',
     technologies: 'Symfony / Twig / Doctrine / SQLite / API',
     description:
-      "Ce projet est une évolution d'un site de e-commerce existant, visant à améliorer et étendre ses fonctionnalités, sa sécurité et son ergonomie. Ce projet est réalisé dans le cadre d'une initiative académique pour approfondir les connaissances en architecture logicielle et en développement web moderne.",
+      "This project is an evolution of an existing e-commerce site, aiming to improve and extend its functionalities, security and ergonomics. This project is carried out as part of an academic initiative to deepen knowledge in software architecture and modern web development.",
     presentation: '/images/project/bookscape.png',
     link: 'https://github.com/johannvig/BookScape',
     gallery: [
@@ -166,10 +166,10 @@ export const projects: Project[] = [
     name: 'Pierre-feuille-ciseaux',
     urlName: 'pfc',
     year: '2022',
-    type: 'Développement logiciel',
+    type: 'Software development',
     technologies: 'Python / OpenCV / CVzone',
     description:
-      "Ce projet est une implémentation interactive du jeu classique Pierre-Feuille-Ciseaux. Utilisant la détection de la main via la webcam et la bibliothèque OpenCV, les joueurs peuvent jouer contre l'ordinateur en montrant leur choix avec des gestes de la main. Le projet utilise également la synthèse vocale pour améliorer l'interaction en annonçant les choix et les résultats du jeu.",
+      "This project is an interactive implementation of the classic game Pierre-Feuille-Ciseaux. Using hand detection via webcam and OpenCV library, players can play against the computer by showing their choice with hand gestures. The project also uses speech synthesis to improve interaction by announcing game choices and results.",
     presentation: '/images/project/pierre_feuille_ciseaux.png',
     link: 'https://github.com/johannvig/pierre-feuille-ciseaux',
     gallery: [
@@ -187,10 +187,10 @@ export const projects: Project[] = [
     name: 'Bioclipse',
     urlName: 'bioclipse',
     year: '2023',
-    type: 'Développement FullStack / Design UX-UI',
+    type: 'Software development',
     technologies: 'PHP / MySQL / Figma / Chatbot OpenAI',
     description:
-      "Ce projet mené sur l'ensemble du semestre S3 avec pour objectif de concevoir et développer une application web pour les producteurs alimentaires afin de distribuer leurs produits selon des standards professionnels. Les objectifs de ce projet sont de créer une application au sein d'une équipe en utilisant une approche de développement, collecter ainsi que formaliser les besoins à partir d'une description initialement vague ou incomplète et de développer une application qui manipule des données et respecte les paradigmes de qualité.",
+      "This project, carried out throughout the S3 semester, aims to design and develop a web application for food producers in order to distribute their products according to professional standards. The objectives of this project are to create an application within a team using a development approach, to collect and formalize needs based on an initially vague or incomplete description, and to develop an application that handles data and respects quality paradigms.",
     presentation: '/images/project/bioclipse.png',
     link: 'https://github.com/johannvig/Bioclipse',
     gallery: [
@@ -218,10 +218,10 @@ export const projects: Project[] = [
     name: 'GuessCountry',
     urlName: 'guesscountry',
     year: '2024',
-    type: 'Développement FullStack',
+    type: 'Software development',
     technologies: 'PHP / RESTCountries API / MySQL',
     description:
-      "Le Jeu Guess Country est un jeu web simple et engageant, conçu pour permettre aux utilisateurs de tester leurs connaissances sur les pays à travers diverses catégories telles que les drapeaux, les devises, les langues, les localisations et les capitales.",
+      "The Guess Country Game is a simple and engaging web-based game designed to allow users to test their knowledge of countries across various categories such as flags, currencies, languages, locations and capitals.",
     presentation: '/images/project/guesscountry.png',
     link: 'https://github.com/johannvig/guessCountry',
     gallery: [

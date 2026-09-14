@@ -239,6 +239,7 @@ export default function About({ onNavigate }: AboutProps) {
           {[
             { label: 'Experiences', value: '2+', color: 'text-cyan-400 border-cyan-500/20 bg-cyan-500/5' },
             { label: 'Years of study', value: '4', color: 'text-emerald-400 border-emerald-500/20 bg-emerald-500/5' },
+
           ].map((stat) => (
             <div key={stat.label} className={`border rounded-2xl px-6 py-3 backdrop-blur-sm ${stat.color}`}>
               <div className="font-display font-bold text-2xl">{stat.value}</div>

@@ -42,12 +42,12 @@ function ProjectCard({
   return (
     <section
       ref={ref}
-      className={`opacity-0-init ${visible ? 'animate-fade-up' : ''}`}
+      className={`opacity-0-init h-full ${visible ? 'animate-fade-up' : ''}`}
       style={{ animationDelay: `${index * 80}ms` }}
     >
       <button
         onClick={() => onOpen(project)}
-        className="group relative w-full text-left border border-white/10 rounded-2xl overflow-hidden hover:border-white/25 transition-all duration-500 backdrop-blur-sm bg-white/[0.02]"
+        className="group relative h-full w-full text-left border border-white/10 rounded-2xl overflow-hidden hover:border-white/25 transition-all duration-500 backdrop-blur-sm bg-white/[0.02]"
       >
         {/* Accent glow */}
         <div
