@@ -53,7 +53,7 @@ const experiences = [
     dot: 'bg-cyan-400',
   },
   {
-    role: 'UI/UX & Web Development Intern',
+    role: 'UI & Web Development Intern',
     company: 'Koust',
     type: 'Internship',
     period: 'apr. 2024 - jul. 2024 · 4 months',
@@ -140,7 +140,7 @@ const skillGroups = [
     color: 'text-blue-400',
     dot: 'bg-blue-400',
     border: 'border-blue-500/20 hover:border-blue-500/50',
-    tools: ['Miro', 'Figma', 'TypeScript', 'Storybook','Maze', 'Lighthouse','EcoIndex'],
+    tools: ['Miro', 'Figma', 'Storybook','Maze'],
   },
   {
     category: 'Frontend',
@@ -161,7 +161,7 @@ const skillGroups = [
     color: 'text-violet-400',
     dot: 'bg-violet-400',
     border: 'border-violet-500/20 hover:border-violet-500/50',
-    tools: ['Azure DevOps', 'Jira', 'Confluence', 'Trello', 'Git', 'Gantt', 'Notion', 'Bruno', 'Docker'],
+    tools: ['Azure DevOps', 'Jira', 'Confluence', 'Trello', 'Git', 'Gantt', 'Notion', 'Bruno', 'Docker', , 'Lighthouse','EcoIndex'],
   },
 ];
 
@@ -238,8 +238,7 @@ export default function About({ onNavigate }: AboutProps) {
         <div className={`mt-10 flex flex-wrap justify-center gap-4 opacity-0-init relative z-10 ${loaded ? 'animate-fade-up delay-500' : ''}`}>
           {[
             { label: 'Experiences', value: '2+', color: 'text-cyan-400 border-cyan-500/20 bg-cyan-500/5' },
-            { label: 'Years of study', value: '5', color: 'text-emerald-400 border-emerald-500/20 bg-emerald-500/5' },
-            { label: 'Technologies', value: '15+', color: 'text-violet-400 border-violet-500/20 bg-violet-500/5' },
+            { label: 'Years of study', value: '4', color: 'text-emerald-400 border-emerald-500/20 bg-emerald-500/5' },
           ].map((stat) => (
             <div key={stat.label} className={`border rounded-2xl px-6 py-3 backdrop-blur-sm ${stat.color}`}>
               <div className="font-display font-bold text-2xl">{stat.value}</div>

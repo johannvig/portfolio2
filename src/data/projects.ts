@@ -24,16 +24,16 @@ export type Project = {
 
 export const projects: Project[] = [
   {
-    name: 'Power Monitor',
-    urlName: 'pm',
+    name: 'My schedule',
+    urlName: 'schedule',
     year: '2026',
-    type: 'FullStack / Design UX-UI',
-    technologies: 'React / Vite / Python / MySQL / Figma',
+    type: 'Front-end / Design UX-UI',
+    technologies: 'PHP / MySQL / Figma / Chatbot OpenAI',
     description:
-      "This application communicates with Meross connected outlets to capture, store and analyze live the consumption of different machines. Our approach began with the collection of user needs, followed by the design of models submitted to an initial feedback phase. After the development of this solution, we conducted targeted user tests in order to continuously assess and optimize the application’s ergonomics and usability.",
+      "This project aimed to rethink the ergonomics and visual identity of the university agenda through a user-centered approach. Conducted in Agile mode, it began with a user research and needs prioritization phase (Sprint 1), followed by the design of the information architecture and the development of a functional prototype (Sprint 2). Regular Sprint Reviews with the sponsor finally made it possible to continuously adjust the interface until the final defense.",
     presentation: '/images/project/bioclipse.png',
-    link: 'https://github.com/johannvig/Mesures-FabLab',
-    caseStudyPage: 'case-study-pm',
+    link: 'https://github.com/johannvig/MonAgenda',
+    caseStudyPage: 'case-study-schedule',
     gallery: [
       { src: '/images/bioclipse/bioclipse1.png', comment: "Page d'accueil" },
       { src: '/images/bioclipse/bioclipse2.png', comment: 'Produits commercialisés par un producteur' },
@@ -56,16 +56,15 @@ export const projects: Project[] = [
     },
   },
   {
-    name: 'My schedule',
-    urlName: 'schedule',
+    name: 'Power Monitor',
+    urlName: 'pm',
     year: '2026',
-    type: 'Front-end / Design UX-UI',
-    technologies: 'PHP / MySQL / Figma / Chatbot OpenAI',
+    type: 'FullStack / Design UX-UI',
+    technologies: 'React / Vite / Python / MySQL / Figma',
     description:
-      "This project aimed to rethink the ergonomics and visual identity of the university agenda through a user-centered approach. Conducted in Agile mode, it began with a user research and needs prioritization phase (Sprint 1), followed by the design of the information architecture and the development of a functional prototype (Sprint 2). Regular Sprint Reviews with the sponsor finally made it possible to continuously adjust the interface until the final defense.",
+      "This application communicates with Meross connected outlets to capture, store and analyze live the consumption of different machines. Our approach began with the collection of user needs, followed by the design of models submitted to an initial feedback phase. After the development of this solution, we conducted targeted user tests in order to continuously assess and optimize the application’s ergonomics and usability.",
     presentation: '/images/project/bioclipse.png',
-    link: 'https://github.com/johannvig/MonAgenda',
-    caseStudyPage: 'case-study-schedule',
+    link: 'https://github.com/johannvig/Mesures-FabLab',
     gallery: [
       { src: '/images/bioclipse/bioclipse1.png', comment: "Page d'accueil" },
       { src: '/images/bioclipse/bioclipse2.png', comment: 'Produits commercialisés par un producteur' },
@@ -105,7 +104,7 @@ export const projects: Project[] = [
       { src: '/images/pictocomm/pictocomm5.png', comment: 'Page de favoris' },
     ],
     colors: {
-      darktitlecol: '#f9bd0a',
+      darktitlecol: '#ded3c7',
       lighttitlecol: '#0264bc',
       darkshapecol: '#0264bc',
       lightshapecol: '#ffb40340',
@@ -130,7 +129,7 @@ export const projects: Project[] = [
       { src: '/images/parklech/parklech6.png', comment: 'Page de création de compte' },
     ],
     colors: {
-      darktitlecol: '#6e6ff0',
+      darktitlecol: '#ded3c7',
       lighttitlecol: '#0002d5',
       darkshapecol: '#3e2efe9e',
       lightshapecol: '#0074de5e',
@@ -178,7 +177,7 @@ export const projects: Project[] = [
       { src: '/images/pfc/pfc2.png', comment: 'Résumé des parties' },
     ],
     colors: {
-      darktitlecol: '#108cd3',
+      darktitlecol: '#ded3c7',
       lighttitlecol: '#ff008f',
       darkshapecol: '#b82199',
       lightshapecol: '#2fd8ff5c',
@@ -238,7 +237,7 @@ export const projects: Project[] = [
       { src: '/images/guesscountry/guesscountry10.png', comment: 'Deviner le pays associé à la capitale' },
     ],
     colors: {
-      darktitlecol: '#108cd3',
+      darktitlecol: '#ded3c7',
       lighttitlecol: '#ff008f',
       darkshapecol: '#b82199',
       lightshapecol: '#2fd8ff5c',
