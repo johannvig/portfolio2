@@ -370,8 +370,10 @@ export default function About({ onNavigate }: AboutProps) {
         {/* CV download */}
         <div className="mt-8 flex justify-center">
           <a
-            href="#"
-            className="group flex items-center gap-2 border border-white-500/30 text-white-300/80 px-7 py-3 rounded-full font-display font-medium text-sm tracking-wide hover:border-cyan-400/60 hover:text-cyan-200 hover:bg-cyan-500/5 transition-all duration-300"
+            href="/CV_Johanne_Vigouroux.pdf"
+            target="_blank"
+            rel="noreferrer"
+            className="group flex items-center gap-2 border border-white/20 text-white/80 px-7 py-3 rounded-full font-display font-medium text-sm tracking-wide hover:border-cyan-400/60 hover:text-cyan-200 hover:bg-cyan-500/5 transition-all duration-300"
           >
             <FileText size={15} />
             View Resume
