@@ -454,9 +454,12 @@ export default function About({ onNavigate }: AboutProps) {
         <h2 className="font-display font-bold text-3xl md:text-5xl text-white mb-4 relative z-10">
           Let's work <span className="about-gradient-text">together</span>
         </h2>
-        <p className="text-white/40 text-base mb-8 max-w-md mx-auto relative z-10">
+        <a
+          href="mailto:johanne.vigouroux@imt-atlantique.net"
+          className="block text-white/40 text-base mb-8 max-w-md mx-auto relative z-10 hover:text-white/70 transition-colors"
+        >
           An idea to develop ? Contact me.
-        </p>
+        </a>
         <button
           onClick={() => onNavigate('home')}
           className="group relative inline-flex items-center gap-2 bg-gradient-to-r from-cyan-500 to-blue-500 text-white px-8 py-3.5 rounded-full font-display font-semibold text-sm tracking-wide hover:from-cyan-400 hover:to-blue-400 transition-all duration-300 hover:gap-3 shadow-lg shadow-cyan-500/20 z-10"
