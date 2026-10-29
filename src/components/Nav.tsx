@@ -1,4 +1,4 @@
-import { Github, Linkedin, Mail } from 'lucide-react';
+import { Briefcase, FileText, Github, Linkedin, Mail } from 'lucide-react';
 
 type NavProps = {
   currentPage: string;
@@ -41,6 +41,24 @@ export default function Nav({ currentPage, onNavigate }: NavProps) {
           className="text-white/40 hover:text-white transition-colors duration-300"
         >
           <Mail size={16} />
+        </a>
+        <a
+          href="/CV_Johanne_Vigouroux.pdf"
+          download
+          aria-label="Télécharger mon CV"
+          title="Télécharger mon CV"
+          className="text-white/40 hover:text-white transition-colors duration-300"
+        >
+          <FileText size={16} />
+        </a>
+        <a
+          href="/Johanne Vigouroux - Portfolio.pdf"
+          download
+          aria-label="Télécharger mon portfolio"
+          title="Télécharger mon portfolio"
+          className="text-white/40 hover:text-white transition-colors duration-300"
+        >
+          <Briefcase size={16} />
         </a>
       </div>
     </nav>

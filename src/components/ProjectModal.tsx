@@ -5,10 +5,9 @@ import { type Project } from '../data/projects';
 type Props = {
   project: Project;
   onClose: () => void;
-  onCaseStudy?: () => void;
 };
 
-export default function ProjectModal({ project, onClose, onCaseStudy }: Props) {
+export default function ProjectModal({ project, onClose }: Props) {
   const [galleryIdx, setGalleryIdx] = useState(0);
   const accent = project.colors.darkshapecol;
   const titleCol = project.colors.darktitlecol;
@@ -174,15 +173,15 @@ export default function ProjectModal({ project, onClose, onCaseStudy }: Props) {
               <ArrowUpRight size={15} className="group-hover:rotate-45 transition-transform duration-300" />
             </a>
 
-            {onCaseStudy && (
-              <button
-                type="button"
-                onClick={onCaseStudy}
+            {project.caseStudyPage && (
+              <a
+                href={project.caseStudyPage}
+                download
                 className="group inline-flex items-center gap-2 border border-cyan-400/25 bg-cyan-400/10 text-cyan-100 px-6 py-3 rounded-full font-display font-medium text-sm tracking-wide hover:border-cyan-300/50 hover:bg-cyan-400/15 hover:text-white transition-all duration-300"
               >
-                Case study
+                Download case study
                 <ArrowUpRight size={15} className="group-hover:rotate-45 transition-transform duration-300" />
-              </button>
+              </a>
             )}
           </div>
         </div>

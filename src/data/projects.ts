@@ -33,7 +33,7 @@ export const projects: Project[] = [
       "This project aimed to rethink the ergonomics and visual identity of the university agenda through a user-centered approach. Conducted in Agile mode, it began with a user research and needs prioritization phase (Sprint 1), followed by the design of the information architecture and the development of a functional prototype (Sprint 2). Regular Sprint Reviews with the sponsor finally made it possible to continuously adjust the interface until the final defense.",
     presentation: '/images/project/schedule.png',
     link: 'https://github.com/johannvig/MonAgenda',
-    caseStudyPage: 'case-study-schedule',
+    caseStudyPage: '/Portfolio - Schedule Project - Johanne Vigouroux.pdf',
     gallery: [
       { src: '/images/schedule/schedule1.png', comment: "Page d'accueil" },
       { src: '/images/schedule/schedule2.png', comment: 'Produits commercialisés par un producteur' },
@@ -46,6 +46,31 @@ export const projects: Project[] = [
       lighttitlecol: '#3ddd70',
       darkshapecol: '#3ddd70',
       lightshapecol: '#ded3c7',
+    },
+  },
+  {
+    name: 'PictoComm',
+    urlName: 'pictocomm',
+    year: '2023',
+    type: 'Software development / UI/UX Design',
+    technologies: 'JavaFX / Figma',
+    description:
+      "PictoComm is an app designed to make it easier for people with autism to express themselves through pictograms. Using JavaFX, this application offers an intuitive interface allowing users to select and communicate via symbolic images.",
+    presentation: '/images/project/pictocomm.png',
+    link: 'https://github.com/johannvig/PictoComm',
+    caseStudyPage: '/Portfolio - Pictocomm Project - Johanne vigouroux.pdf',
+    gallery: [
+      { src: '/images/pictocomm/pictocomm1.png', comment: 'Choisir un pictogramme' },
+      { src: '/images/pictocomm/pictocomm2.png', comment: 'Créer un séquentiel à partir de pictogramme' },
+      { src: '/images/pictocomm/pictocomm3.png', comment: 'Personnaliser un pictogramme 1' },
+      { src: '/images/pictocomm/pictocomm4.png', comment: 'Personnaliser un pictogramme 2' },
+      { src: '/images/pictocomm/pictocomm5.png', comment: 'Page de favoris' },
+    ],
+    colors: {
+      darktitlecol: '#ded3c7',
+      lighttitlecol: '#0264bc',
+      darkshapecol: '#0264bc',
+      lightshapecol: '#ffb40340',
     },
   },
   {
@@ -70,30 +95,6 @@ export const projects: Project[] = [
       lighttitlecol: '#3ddd70',
       darkshapecol: '#3ddd70',
       lightshapecol: '#ded3c7',
-    },
-  },
-  {
-    name: 'PictoComm',
-    urlName: 'pictocomm',
-    year: '2023',
-    type: 'Software development / UI/UX Design',
-    technologies: 'JavaFX / Figma',
-    description:
-      "PictoComm is an app designed to make it easier for people with autism to express themselves through pictograms. Using JavaFX, this application offers an intuitive interface allowing users to select and communicate via symbolic images.",
-    presentation: '/images/project/pictocomm.png',
-    link: 'https://github.com/johannvig/PictoComm',
-    gallery: [
-      { src: '/images/pictocomm/pictocomm1.png', comment: 'Choisir un pictogramme' },
-      { src: '/images/pictocomm/pictocomm2.png', comment: 'Créer un séquentiel à partir de pictogramme' },
-      { src: '/images/pictocomm/pictocomm3.png', comment: 'Personnaliser un pictogramme 1' },
-      { src: '/images/pictocomm/pictocomm4.png', comment: 'Personnaliser un pictogramme 2' },
-      { src: '/images/pictocomm/pictocomm5.png', comment: 'Page de favoris' },
-    ],
-    colors: {
-      darktitlecol: '#ded3c7',
-      lighttitlecol: '#0264bc',
-      darkshapecol: '#0264bc',
-      lightshapecol: '#ffb40340',
     },
   },
   {

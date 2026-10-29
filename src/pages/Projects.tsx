@@ -181,7 +181,6 @@ export default function Projects({ onNavigate }: ProjectsProps) {
         <ProjectModal
           project={selected}
           onClose={() => setSelected(null)}
-          onCaseStudy={selected.caseStudyPage ? () => onNavigate(selected.caseStudyPage!) : undefined}
         />
       )}
     </div>
