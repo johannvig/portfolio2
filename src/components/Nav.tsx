@@ -33,9 +33,6 @@ export default function Nav({ currentPage, onNavigate }: NavProps) {
         <a href="https://github.com/johannvig" className="text-white/40 hover:text-white transition-colors duration-300">
           <Github size={16} />
         </a>
-        <a href="https://www.linkedin.com/in/johanne-vigouroux-ab8810244/" className="text-white/40 hover:text-white transition-colors duration-300">
-          <Linkedin size={16} />
-        </a>
         <a 
           href="mailto:johanne.vigouroux@imt-atlantique.net" 
           className="text-white/40 hover:text-white transition-colors duration-300"
@@ -46,19 +43,23 @@ export default function Nav({ currentPage, onNavigate }: NavProps) {
           href="/CV_Johanne_Vigouroux.pdf"
           download
           aria-label="Télécharger mon CV"
-          title="Télécharger mon CV"
-          className="text-white/40 hover:text-white transition-colors duration-300"
+          className="group relative text-white/40 hover:text-white transition-colors duration-300"
         >
           <FileText size={16} />
+          <span className="pointer-events-none absolute top-full left-1/2 mt-3 -translate-x-1/2 whitespace-nowrap rounded bg-black/80 px-2 py-1 text-xs text-white opacity-0 transition-opacity duration-200 group-hover:opacity-100">
+            Resume
+          </span>
         </a>
         <a
           href="/Johanne Vigouroux - Portfolio.pdf"
           download
           aria-label="Télécharger mon portfolio"
-          title="Télécharger mon portfolio"
-          className="text-white/40 hover:text-white transition-colors duration-300"
+          className="group relative text-white/40 hover:text-white transition-colors duration-300"
         >
           <Briefcase size={16} />
+          <span className="pointer-events-none absolute top-full left-1/2 mt-3 -translate-x-1/2 whitespace-nowrap rounded bg-black/80 px-2 py-1 text-xs text-white opacity-0 transition-opacity duration-200 group-hover:opacity-100">
+            Portfolio
+          </span>
         </a>
       </div>
     </nav>
