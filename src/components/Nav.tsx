@@ -1,4 +1,4 @@
-import { Briefcase, FileText, Github, Linkedin, Mail } from 'lucide-react';
+import { BookOpen, FileText, Github, Mail } from 'lucide-react';
 
 type NavProps = {
   currentPage: string;
@@ -30,14 +30,25 @@ export default function Nav({ currentPage, onNavigate }: NavProps) {
         ))}
       </div>
       <div className="flex items-center gap-4">
-        <a href="https://github.com/johannvig" className="text-white/40 hover:text-white transition-colors duration-300">
+        <a
+          href="https://github.com/johannvig"
+          aria-label="Visiter mon GitHub"
+          className="group relative text-white/40 hover:text-white transition-colors duration-300"
+        >
           <Github size={16} />
+          <span className="pointer-events-none absolute top-full left-1/2 mt-3 -translate-x-1/2 whitespace-nowrap rounded bg-black/80 px-2 py-1 text-xs text-white opacity-0 transition-opacity duration-200 group-hover:opacity-100">
+            GitHub
+          </span>
         </a>
         <a 
           href="mailto:johanne.vigouroux@imt-atlantique.net" 
-          className="text-white/40 hover:text-white transition-colors duration-300"
+          aria-label="M'envoyer un email"
+          className="group relative text-white/40 hover:text-white transition-colors duration-300"
         >
           <Mail size={16} />
+          <span className="pointer-events-none absolute top-full left-1/2 mt-3 -translate-x-1/2 whitespace-nowrap rounded bg-black/80 px-2 py-1 text-xs text-white opacity-0 transition-opacity duration-200 group-hover:opacity-100">
+            Email
+          </span>
         </a>
         <a
           href="/CV_Johanne_Vigouroux.pdf"
@@ -56,7 +67,7 @@ export default function Nav({ currentPage, onNavigate }: NavProps) {
           aria-label="Télécharger mon portfolio"
           className="group relative text-white/40 hover:text-white transition-colors duration-300"
         >
-          <Briefcase size={16} />
+          <BookOpen size={16} />
           <span className="pointer-events-none absolute top-full left-1/2 mt-3 -translate-x-1/2 whitespace-nowrap rounded bg-black/80 px-2 py-1 text-xs text-white opacity-0 transition-opacity duration-200 group-hover:opacity-100">
             Portfolio
           </span>
