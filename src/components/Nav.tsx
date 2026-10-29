@@ -1,4 +1,4 @@
-import { BookOpen, FileText, Github, Mail } from 'lucide-react';
+import { Github, Mail } from 'lucide-react';
 
 type NavProps = {
   currentPage: string;
@@ -54,23 +54,17 @@ export default function Nav({ currentPage, onNavigate }: NavProps) {
           href="/CV_Johanne_Vigouroux.pdf"
           download
           aria-label="Télécharger mon CV"
-          className="group relative text-white/40 hover:text-white transition-colors duration-300"
+          className="text-white/40 hover:text-white transition-colors duration-300 font-display text-xs tracking-wide"
         >
-          <FileText size={16} />
-          <span className="pointer-events-none absolute top-full left-1/2 mt-3 -translate-x-1/2 whitespace-nowrap rounded bg-black/80 px-2 py-1 text-xs text-white opacity-0 transition-opacity duration-200 group-hover:opacity-100">
-            Resume
-          </span>
+          Resume
         </a>
         <a
           href="/Johanne Vigouroux - Portfolio.pdf"
           download
           aria-label="Télécharger mon portfolio"
-          className="group relative text-white/40 hover:text-white transition-colors duration-300"
+          className="text-white/40 hover:text-white transition-colors duration-300 font-display text-xs tracking-wide"
         >
-          <BookOpen size={16} />
-          <span className="pointer-events-none absolute top-full left-1/2 mt-3 -translate-x-1/2 whitespace-nowrap rounded bg-black/80 px-2 py-1 text-xs text-white opacity-0 transition-opacity duration-200 group-hover:opacity-100">
-            Portfolio
-          </span>
+          Portfolio
         </a>
       </div>
     </nav>
